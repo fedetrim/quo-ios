@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E16204CACDE00020631 /* AppDelegate.swift */; };
-		E33B5E19204CACDE00020631 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E18204CACDE00020631 /* FirstViewController.swift */; };
+		E33B5E19204CACDE00020631 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */; };
 		E33B5E1B204CACDE00020631 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E1A204CACDE00020631 /* SecondViewController.swift */; };
 		E33B5E1E204CACDE00020631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33B5E1C204CACDE00020631 /* Main.storyboard */; };
 		E33B5E20204CACDF00020631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33B5E1F204CACDF00020631 /* Assets.xcassets */; };
 		E33B5E23204CACDF00020631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33B5E21204CACDF00020631 /* LaunchScreen.storyboard */; };
 		E33B5E2E204CACE000020631 /* QuoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E2D204CACE000020631 /* QuoTests.swift */; };
+		E37BCFA12050CA3000449B6D /* QuoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BCFA02050CA3000449B6D /* QuoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +30,7 @@
 /* Begin PBXFileReference section */
 		E33B5E13204CACDE00020631 /* Quo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33B5E16204CACDE00020631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E33B5E18204CACDE00020631 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
 		E33B5E1A204CACDE00020631 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E33B5E1D204CACDE00020631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E33B5E1F204CACDF00020631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		E33B5E29204CACE000020631 /* QuoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33B5E2D204CACE000020631 /* QuoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoTests.swift; sourceTree = "<group>"; };
 		E33B5E2F204CACE000020631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37BCFA02050CA3000449B6D /* QuoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				E33B5E16204CACDE00020631 /* AppDelegate.swift */,
-				E33B5E18204CACDE00020631 /* FirstViewController.swift */,
+				E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */,
 				E33B5E1A204CACDE00020631 /* SecondViewController.swift */,
 				E33B5E1C204CACDE00020631 /* Main.storyboard */,
+				E37BCFA02050CA3000449B6D /* QuoCell.swift */,
 				E33B5E1F204CACDF00020631 /* Assets.xcassets */,
 				E33B5E21204CACDF00020631 /* LaunchScreen.storyboard */,
 				E33B5E24204CACE000020631 /* Info.plist */,
@@ -200,8 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E33B5E1B204CACDE00020631 /* SecondViewController.swift in Sources */,
+				E37BCFA12050CA3000449B6D /* QuoCell.swift in Sources */,
 				E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */,
-				E33B5E19204CACDE00020631 /* FirstViewController.swift in Sources */,
+				E33B5E19204CACDE00020631 /* QuotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
