@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3255BD62059E94E009C8834 /* ChronologicalQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */; };
 		E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E16204CACDE00020631 /* AppDelegate.swift */; };
 		E33B5E19204CACDE00020631 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */; };
 		E33B5E1B204CACDE00020631 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E1A204CACDE00020631 /* SecondViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronologicalQuotesViewController.swift; sourceTree = "<group>"; };
 		E33B5E13204CACDE00020631 /* Quo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33B5E16204CACDE00020631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E33B5E16204CACDE00020631 /* AppDelegate.swift */,
+				E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */,
 				E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */,
 				E33B5E1A204CACDE00020631 /* SecondViewController.swift */,
 				E33B5E1C204CACDE00020631 /* Main.storyboard */,
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3255BD62059E94E009C8834 /* ChronologicalQuotesViewController.swift in Sources */,
 				E33B5E1B204CACDE00020631 /* SecondViewController.swift in Sources */,
 				E37BCFA12050CA3000449B6D /* QuoCell.swift in Sources */,
 				E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */,
