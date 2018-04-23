@@ -14,10 +14,7 @@ class CreateQuoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "icClose"), style: .plain, target: self, action: #selector(closeButtonTapped))
-        
-//        quoteTextField.text = ""
-//        quoteTextField.placeholder = "blah"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "icClose"), style: .plain, target: self, action: #selector(closeButtonTapped))
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShowOrHide(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShowOrHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
