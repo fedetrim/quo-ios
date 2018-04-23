@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		E3255BD62059E94E009C8834 /* ChronologicalQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */; };
+		E3255BD92059EE3F009C8834 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3255BD82059EE3F009C8834 /* Quote.swift */; };
+		E327FCFC20608EE900684BD8 /* QuotesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327FCFB20608EE900684BD8 /* QuotesCache.swift */; };
+		E327FCFE2060913700684BD8 /* TabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327FCFD2060913700684BD8 /* TabBarControllerDelegate.swift */; };
 		E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E16204CACDE00020631 /* AppDelegate.swift */; };
 		E33B5E19204CACDE00020631 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */; };
-		E33B5E1B204CACDE00020631 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E1A204CACDE00020631 /* SecondViewController.swift */; };
+		E33B5E1B204CACDE00020631 /* CreateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E1A204CACDE00020631 /* CreateQuoteViewController.swift */; };
 		E33B5E1E204CACDE00020631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33B5E1C204CACDE00020631 /* Main.storyboard */; };
 		E33B5E20204CACDF00020631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33B5E1F204CACDF00020631 /* Assets.xcassets */; };
 		E33B5E23204CACDF00020631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33B5E21204CACDF00020631 /* LaunchScreen.storyboard */; };
 		E33B5E2E204CACE000020631 /* QuoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E2D204CACE000020631 /* QuoTests.swift */; };
-		E37BCFA12050CA3000449B6D /* QuoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BCFA02050CA3000449B6D /* QuoCell.swift */; };
+		E347A7BB2089557B004F2DCF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E347A7BA2089557B004F2DCF /* Colors.xcassets */; };
+		E37BCFA12050CA3000449B6D /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BCFA02050CA3000449B6D /* QuoteCell.swift */; };
+		E37CAD9B208EA1C400EFB0DE /* UITextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37CAD9A208EA1C400EFB0DE /* UITextViewPlaceholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +35,13 @@
 
 /* Begin PBXFileReference section */
 		E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronologicalQuotesViewController.swift; sourceTree = "<group>"; };
+		E3255BD82059EE3F009C8834 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		E327FCFB20608EE900684BD8 /* QuotesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCache.swift; sourceTree = "<group>"; };
+		E327FCFD2060913700684BD8 /* TabBarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerDelegate.swift; sourceTree = "<group>"; };
 		E33B5E13204CACDE00020631 /* Quo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33B5E16204CACDE00020631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
-		E33B5E1A204CACDE00020631 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E33B5E1A204CACDE00020631 /* CreateQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuoteViewController.swift; sourceTree = "<group>"; };
 		E33B5E1D204CACDE00020631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E33B5E1F204CACDF00020631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E33B5E22204CACDF00020631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,7 +49,9 @@
 		E33B5E29204CACE000020631 /* QuoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33B5E2D204CACE000020631 /* QuoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoTests.swift; sourceTree = "<group>"; };
 		E33B5E2F204CACE000020631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E37BCFA02050CA3000449B6D /* QuoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoCell.swift; sourceTree = "<group>"; };
+		E347A7BA2089557B004F2DCF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E37BCFA02050CA3000449B6D /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		E37CAD9A208EA1C400EFB0DE /* UITextViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewPlaceholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +94,17 @@
 			isa = PBXGroup;
 			children = (
 				E33B5E16204CACDE00020631 /* AppDelegate.swift */,
+				E327FCFD2060913700684BD8 /* TabBarControllerDelegate.swift */,
 				E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */,
 				E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */,
-				E33B5E1A204CACDE00020631 /* SecondViewController.swift */,
+				E33B5E1A204CACDE00020631 /* CreateQuoteViewController.swift */,
+				E3255BD82059EE3F009C8834 /* Quote.swift */,
 				E33B5E1C204CACDE00020631 /* Main.storyboard */,
-				E37BCFA02050CA3000449B6D /* QuoCell.swift */,
+				E37BCFA02050CA3000449B6D /* QuoteCell.swift */,
+				E327FCFB20608EE900684BD8 /* QuotesCache.swift */,
+				E37CAD9A208EA1C400EFB0DE /* UITextViewPlaceholder.swift */,
 				E33B5E1F204CACDF00020631 /* Assets.xcassets */,
+				E347A7BA2089557B004F2DCF /* Colors.xcassets */,
 				E33B5E21204CACDF00020631 /* LaunchScreen.storyboard */,
 				E33B5E24204CACE000020631 /* Info.plist */,
 			);
@@ -186,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E33B5E23204CACDF00020631 /* LaunchScreen.storyboard in Resources */,
+				E347A7BB2089557B004F2DCF /* Colors.xcassets in Resources */,
 				E33B5E20204CACDF00020631 /* Assets.xcassets in Resources */,
 				E33B5E1E204CACDE00020631 /* Main.storyboard in Resources */,
 			);
@@ -206,9 +222,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3255BD62059E94E009C8834 /* ChronologicalQuotesViewController.swift in Sources */,
-				E33B5E1B204CACDE00020631 /* SecondViewController.swift in Sources */,
-				E37BCFA12050CA3000449B6D /* QuoCell.swift in Sources */,
+				E327FCFE2060913700684BD8 /* TabBarControllerDelegate.swift in Sources */,
+				E33B5E1B204CACDE00020631 /* CreateQuoteViewController.swift in Sources */,
+				E37CAD9B208EA1C400EFB0DE /* UITextViewPlaceholder.swift in Sources */,
+				E37BCFA12050CA3000449B6D /* QuoteCell.swift in Sources */,
 				E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */,
+				E327FCFC20608EE900684BD8 /* QuotesCache.swift in Sources */,
+				E3255BD92059EE3F009C8834 /* Quote.swift in Sources */,
 				E33B5E19204CACDE00020631 /* QuotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
