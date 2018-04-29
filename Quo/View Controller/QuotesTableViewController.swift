@@ -9,7 +9,20 @@ import UIKit
 
 class QuotesTableViewController: UITableViewController {
     
-    var quotes = QuotesCache.quotes
+    var quotes: [Quote] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        QuotesService.fetchQuotes { (quotes, error) in
+            guard let quotes = quotes else { return }
+            self.quotes = quotes
+        }
+    }
     
 }
 

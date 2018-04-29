@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second-->
+        <!--Crear cita-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController storyboardIdentifier="CreateQuoteViewController" id="8rJ-Kc-sve" customClass="CreateQuoteViewController" customModule="Quo" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ku-vy-KCg">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ku-vy-KCg">
                                 <rect key="frame" x="20" y="40" width="335" height="540"/>
                                 <color key="textColor" name="greyish"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -34,8 +34,11 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="cTa-Ax-gav"/>
+                                </connections>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="265" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FL2-hS-Qrg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="280" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FL2-hS-Qrg">
                                 <rect key="frame" x="20" y="590" width="335" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" name="darkSkyBlue"/>
@@ -55,8 +58,9 @@
                         <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Crear cita" image="icQuoteOff" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="charactersCountLabel" destination="FL2-hS-Qrg" id="PAG-X0-yff"/>
                         <outlet property="quoteTextField" destination="6ku-vy-KCg" id="rwq-rd-AGw"/>
                     </connections>
                 </viewController>
@@ -158,28 +162,28 @@ Some people aren't used to an environment where excellence is expected.”</stri
                                                             <rect key="frame" x="20" y="10" width="315" height="40"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Rcf-Zj-hMs">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="227" height="40"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4p-o2-qdh">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="227" height="23"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="315" height="23"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                             <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hace 15 minutos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooO-Wp-15Q">
-                                                                            <rect key="frame" x="0.0" y="23" width="227" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="23" width="315" height="17"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5l-Rl-Ei6">
-                                                                    <rect key="frame" x="231" y="0.0" width="40" height="40"/>
+                                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5l-Rl-Ei6">
+                                                                    <rect key="frame" x="-30" y="0.0" width="40" height="40"/>
                                                                     <state key="normal" image="icVoteOff"/>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-kZ-E22">
-                                                                    <rect key="frame" x="275" y="0.0" width="40" height="40"/>
+                                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-kZ-E22">
+                                                                    <rect key="frame" x="-30" y="0.0" width="40" height="40"/>
                                                                     <state key="normal" image="icLikeOff"/>
                                                                 </button>
                                                             </subviews>
@@ -236,11 +240,11 @@ Some people aren't used to an environment where excellence is expected.”</stri
             </objects>
             <point key="canvasLocation" x="2274" y="-358"/>
         </scene>
-        <!--First-->
+        <!--Feed-->
         <scene sceneID="CJA-27-Urt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ClG-bW-F3O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="3wL-fb-rPM"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="icFeedOff" id="3wL-fb-rPM"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="Jds-Ey-ugl">
@@ -258,10 +262,10 @@ Some people aren't used to an environment where excellence is expected.”</stri
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="icFeedOff" width="24" height="24"/>
         <image name="icLikeOff" width="40" height="40"/>
+        <image name="icQuoteOff" width="24" height="24"/>
         <image name="icVoteOff" width="40" height="40"/>
-        <image name="second" width="30" height="30"/>
         <namedColor name="blackFour">
             <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

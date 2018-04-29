@@ -9,4 +9,8 @@ import UIKit
 
 final class ChronologicalQuotesViewController: UIViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
 }

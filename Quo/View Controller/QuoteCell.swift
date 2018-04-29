@@ -47,7 +47,7 @@ extension QuoteCell.ViewData {
     
     init(quote: Quote) {
         message = "“" + quote.message + "“"
-        author = quote.author
+        author = quote.author ?? "Anónimo"
         dateText = "Hace 15 minutos" // FIXME: arreglar
     }
     

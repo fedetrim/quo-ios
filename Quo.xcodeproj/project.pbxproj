@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		E3255BD62059E94E009C8834 /* ChronologicalQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */; };
 		E3255BD92059EE3F009C8834 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3255BD82059EE3F009C8834 /* Quote.swift */; };
-		E327FCFC20608EE900684BD8 /* QuotesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327FCFB20608EE900684BD8 /* QuotesCache.swift */; };
+		E327FCFC20608EE900684BD8 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327FCFB20608EE900684BD8 /* QuotesService.swift */; };
 		E327FCFE2060913700684BD8 /* TabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327FCFD2060913700684BD8 /* TabBarControllerDelegate.swift */; };
+		E3380DFA2095044C00D48DD1 /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3380DF92095044C00D48DD1 /* BackendClient.swift */; };
+		E3380DFC209504D500D48DD1 /* BackendClient+Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3380DFB209504D500D48DD1 /* BackendClient+Quotes.swift */; };
 		E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E16204CACDE00020631 /* AppDelegate.swift */; };
 		E33B5E19204CACDE00020631 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */; };
 		E33B5E1B204CACDE00020631 /* CreateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33B5E1A204CACDE00020631 /* CreateQuoteViewController.swift */; };
@@ -36,8 +38,10 @@
 /* Begin PBXFileReference section */
 		E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronologicalQuotesViewController.swift; sourceTree = "<group>"; };
 		E3255BD82059EE3F009C8834 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		E327FCFB20608EE900684BD8 /* QuotesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCache.swift; sourceTree = "<group>"; };
+		E327FCFB20608EE900684BD8 /* QuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesService.swift; sourceTree = "<group>"; };
 		E327FCFD2060913700684BD8 /* TabBarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerDelegate.swift; sourceTree = "<group>"; };
+		E3380DF92095044C00D48DD1 /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
+		E3380DFB209504D500D48DD1 /* BackendClient+Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackendClient+Quotes.swift"; sourceTree = "<group>"; };
 		E33B5E13204CACDE00020631 /* Quo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33B5E16204CACDE00020631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3380DF82095043E00D48DD1 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				E3380DF92095044C00D48DD1 /* BackendClient.swift */,
+				E3380DFB209504D500D48DD1 /* BackendClient+Quotes.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		E3380DFD2095057300D48DD1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E327FCFB20608EE900684BD8 /* QuotesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E3380DFE20950AFE00D48DD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3255BD82059EE3F009C8834 /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3380DFF20950B1000D48DD1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E33B5E1C204CACDE00020631 /* Main.storyboard */,
+				E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */,
+				E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */,
+				E33B5E1A204CACDE00020631 /* CreateQuoteViewController.swift */,
+				E37BCFA02050CA3000449B6D /* QuoteCell.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		E3380E0020950B1800D48DD1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E37CAD9A208EA1C400EFB0DE /* UITextViewPlaceholder.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E33B5E0A204CACDE00020631 = {
 			isa = PBXGroup;
 			children = (
@@ -95,18 +144,15 @@
 			children = (
 				E33B5E16204CACDE00020631 /* AppDelegate.swift */,
 				E327FCFD2060913700684BD8 /* TabBarControllerDelegate.swift */,
-				E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */,
-				E33B5E18204CACDE00020631 /* QuotesTableViewController.swift */,
-				E33B5E1A204CACDE00020631 /* CreateQuoteViewController.swift */,
-				E3255BD82059EE3F009C8834 /* Quote.swift */,
-				E33B5E1C204CACDE00020631 /* Main.storyboard */,
-				E37BCFA02050CA3000449B6D /* QuoteCell.swift */,
-				E327FCFB20608EE900684BD8 /* QuotesCache.swift */,
-				E37CAD9A208EA1C400EFB0DE /* UITextViewPlaceholder.swift */,
 				E33B5E1F204CACDF00020631 /* Assets.xcassets */,
 				E347A7BA2089557B004F2DCF /* Colors.xcassets */,
 				E33B5E21204CACDF00020631 /* LaunchScreen.storyboard */,
 				E33B5E24204CACE000020631 /* Info.plist */,
+				E3380DFF20950B1000D48DD1 /* View Controller */,
+				E3380DFE20950AFE00D48DD1 /* Model */,
+				E3380DFD2095057300D48DD1 /* Service */,
+				E3380DF82095043E00D48DD1 /* Client */,
+				E3380E0020950B1800D48DD1 /* Utils */,
 			);
 			path = Quo;
 			sourceTree = "<group>";
@@ -223,11 +269,13 @@
 			files = (
 				E3255BD62059E94E009C8834 /* ChronologicalQuotesViewController.swift in Sources */,
 				E327FCFE2060913700684BD8 /* TabBarControllerDelegate.swift in Sources */,
+				E3380DFC209504D500D48DD1 /* BackendClient+Quotes.swift in Sources */,
 				E33B5E1B204CACDE00020631 /* CreateQuoteViewController.swift in Sources */,
 				E37CAD9B208EA1C400EFB0DE /* UITextViewPlaceholder.swift in Sources */,
 				E37BCFA12050CA3000449B6D /* QuoteCell.swift in Sources */,
 				E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */,
-				E327FCFC20608EE900684BD8 /* QuotesCache.swift in Sources */,
+				E327FCFC20608EE900684BD8 /* QuotesService.swift in Sources */,
+				E3380DFA2095044C00D48DD1 /* BackendClient.swift in Sources */,
 				E3255BD92059EE3F009C8834 /* Quote.swift in Sources */,
 				E33B5E19204CACDE00020631 /* QuotesTableViewController.swift in Sources */,
 			);
