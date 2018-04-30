@@ -17,8 +17,8 @@ extension Date {
     fileprivate var components: DateComponents {
         return Calendar.current.dateComponents(
             [.second, .minute, .hour, .day, .weekOfYear, .month, .year],
-            from: Calendar.current.date(byAdding: .second, value: -1, to: Date())!,
-            to: self
+            from: self,
+            to: Date()
         )
     }
     
@@ -42,7 +42,7 @@ extension Date {
             case let .some(step) where step == 1:
                 return item.single
             case let .some(step):
-                return String(format: item.multi, -step)
+                return String(format: item.multi, step)
             default:
                 continue
             }
