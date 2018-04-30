@@ -15,15 +15,6 @@ class QuotesTableViewController: UITableViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        QuotesService.fetchQuotes { (quotes, error) in
-            guard let quotes = quotes else { return }
-            self.quotes = quotes
-        }
-    }
-    
 }
 
 // MARK - UITableViewDataSource

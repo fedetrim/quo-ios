@@ -43,13 +43,17 @@ class CreateQuoteViewController: UIViewController {
     }
     
     @objc private func closeButtonTapped() {
-        quoteTextField.resignFirstResponder()
-        dismiss(animated: true, completion: nil)
+        dismiss()
     }
     
     @objc private func createQuote() {
-        QuotesService.createQuote(withMessage: quoteTextField.text, author: nil)
-        closeButtonTapped()
+        QuotesService.createQuote(withMessage: quoteTextField.text, author: nil) { _, _  in }
+        dismiss()
+    }
+    
+    private func dismiss() {
+        quoteTextField.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
     }
 
 }

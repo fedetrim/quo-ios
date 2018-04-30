@@ -102,17 +102,25 @@
                                     <segue destination="lbv-Vf-Hcx" kind="embed" id="Rl1-Zh-pou"/>
                                 </connections>
                             </containerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0GP-KU-rll">
+                                <rect key="frame" x="169" y="349" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7dV-5w-014" secondAttribute="trailing" id="Aig-Aj-FFh"/>
+                            <constraint firstItem="0GP-KU-rll" firstAttribute="centerX" secondItem="kkL-N4-R2B" secondAttribute="centerX" id="KTc-hM-NxF"/>
                             <constraint firstAttribute="bottom" secondItem="7dV-5w-014" secondAttribute="bottom" id="Oln-F0-lfb"/>
                             <constraint firstItem="7dV-5w-014" firstAttribute="top" secondItem="SMK-NN-5VU" secondAttribute="top" id="Tsg-BX-qJP"/>
                             <constraint firstItem="7dV-5w-014" firstAttribute="leading" secondItem="SMK-NN-5VU" secondAttribute="leading" id="qHf-xD-tOs"/>
+                            <constraint firstItem="0GP-KU-rll" firstAttribute="centerY" secondItem="kkL-N4-R2B" secondAttribute="centerY" id="xu8-My-F7P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kkL-N4-R2B"/>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="9rd-p7-GsU"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="0GP-KU-rll" id="fYb-0e-RX2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61M-cj-Ykf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

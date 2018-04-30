@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E306E9C42097682C00FC48C6 /* Date+TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E306E9C32097682C00FC48C6 /* Date+TimeAgo.swift */; };
 		E3255BD62059E94E009C8834 /* ChronologicalQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */; };
 		E3255BD92059EE3F009C8834 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3255BD82059EE3F009C8834 /* Quote.swift */; };
 		E327FCFC20608EE900684BD8 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327FCFB20608EE900684BD8 /* QuotesService.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E306E9C32097682C00FC48C6 /* Date+TimeAgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TimeAgo.swift"; sourceTree = "<group>"; };
 		E3255BD52059E94E009C8834 /* ChronologicalQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronologicalQuotesViewController.swift; sourceTree = "<group>"; };
 		E3255BD82059EE3F009C8834 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		E327FCFB20608EE900684BD8 /* QuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesService.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E37CAD9A208EA1C400EFB0DE /* UITextViewPlaceholder.swift */,
+				E306E9C32097682C00FC48C6 /* Date+TimeAgo.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				E327FCFE2060913700684BD8 /* TabBarControllerDelegate.swift in Sources */,
 				E3380DFC209504D500D48DD1 /* BackendClient+Quotes.swift in Sources */,
 				E33B5E1B204CACDE00020631 /* CreateQuoteViewController.swift in Sources */,
+				E306E9C42097682C00FC48C6 /* Date+TimeAgo.swift in Sources */,
 				E37CAD9B208EA1C400EFB0DE /* UITextViewPlaceholder.swift in Sources */,
 				E37BCFA12050CA3000449B6D /* QuoteCell.swift in Sources */,
 				E33B5E17204CACDE00020631 /* AppDelegate.swift in Sources */,
