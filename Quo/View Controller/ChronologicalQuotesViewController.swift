@@ -27,7 +27,6 @@ final class ChronologicalQuotesViewController: UIViewController {
             
             guard let quotes = quotes else { return }
             self?.tableViewController.quotes = quotes
-            self?.tableViewController.refreshControl?.endRefreshing()
         }
     }
     

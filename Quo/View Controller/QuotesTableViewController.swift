@@ -13,7 +13,13 @@ class QuotesTableViewController: UITableViewController {
         didSet {
             let quotesAdded = quotes.filter { oldValue.contains($0) == false }
             let newIndexPaths = quotesAdded.enumerated().map { IndexPath(row: $0.offset, section: 0) }
-            tableView.insertRows(at: newIndexPaths, with: .automatic)
+            if newIndexPaths.count > 0 {
+                tableView.insertRows(at: newIndexPaths, with: .automatic)
+            }
+            
+            if refreshControl?.isRefreshing == true {
+                refreshControl?.endRefreshing()
+            }
         }
     }
     
