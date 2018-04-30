@@ -11,7 +11,9 @@ class QuotesTableViewController: UITableViewController {
     
     var quotes: [Quote] = [] {
         didSet {
-            tableView.reloadData()
+            let quotesAdded = quotes.filter { oldValue.contains($0) == false }
+            let newIndexPaths = quotesAdded.enumerated().map { IndexPath(row: $0.offset, section: 0) }
+            tableView.insertRows(at: newIndexPaths, with: .automatic)
         }
     }
     

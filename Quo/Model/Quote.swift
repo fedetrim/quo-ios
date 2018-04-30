@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Quote {
+struct Quote: Equatable {
     var id: Int?
     var message: String
     var author: String?
